@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function Header(){return <div className="nav"><Link href="/" className="brand"><span className="logo">RL</span><span>RL REEL STUDIO</span></Link><div className="navlinks"><Link href="/#how">How It Works</Link><Link href="/#styles">RL Styles</Link><Link href="/dashboard">Dashboard</Link></div><Link href="/login" className="btn btnGold">Login / Start</Link></div>}

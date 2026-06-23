@@ -1,0 +1,3 @@
+import Header from '../components/Header'
+import Link from 'next/link'
+export default function Login(){return <div><Header/><div className="loginWrap"><div className="loginCard glass"><div className="eyebrow">RL Reel Studio Access</div><h1 style={{fontSize:42,margin:'12px 0'}}>Login to your studio</h1><p className="muted">Upload footage, create projects, preview AI edited reels, and export final videos.</p><div style={{display:'grid',gap:14,marginTop:24}}><input placeholder="Email address"/><input placeholder="Password" type="password"/><Link className="btn btnGold" href="/dashboard">Login</Link><button className="btn btnDark">Create Account</button></div></div></div></div>}

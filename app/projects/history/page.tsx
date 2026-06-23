@@ -1,0 +1,3 @@
+import Sidebar from '../../components/Sidebar'
+import {demoProjects} from '@/lib/data'
+export default function History(){return <div className="dash"><Sidebar/><main className="main"><div className="toprow"><div><div className="eyebrow">Archive</div><h1 style={{fontSize:44,margin:'8px 0'}}>Project History</h1><p className="muted">Review previous uploads, preview versions, revisions, and final exports.</p></div></div><section className="panel">{demoProjects.concat(demoProjects).map((p,i)=><div className="projectRow" key={p.name+i}><b>{p.name}</b><span className="muted">{p.industry}</span><span>{p.style}</span><span>{p.output}</span><span className="status">{p.status}</span></div>)}</section></main></div>}
