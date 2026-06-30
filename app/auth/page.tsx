@@ -1,0 +1,2 @@
+import Nav from '@/components/Nav';
+export default function Auth(){return <><Nav/><main className="container section"><div className="panel" style={{maxWidth:520,margin:'0 auto'}}><h1>Login</h1><label>Email<input className="input" placeholder="you@email.com"/></label><br/><label>Password<input className="input" type="password" placeholder="••••••••"/></label><br/><button className="btn">Continue</button><p className="muted">Authentication screen ready for Supabase, Clerk, or NextAuth integration.</p></div></main></>}

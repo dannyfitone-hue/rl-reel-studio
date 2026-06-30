@@ -1,0 +1,2 @@
+import Nav from '@/components/Nav';
+export default function Processing(){return <><Nav/><main className="container section"><h1>AI Processing</h1><div className="panel"><h2>Building your RL-style reel</h2><p className="muted">Analyzing best clips, removing bad footage, writing captions, syncing to music, and generating A / B / C previews.</p><div className="progress"><div className="bar"/></div></div></main></>}

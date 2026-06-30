@@ -1,21 +1,11 @@
-# RL Reel Studio - Vercel Ready Static MVP
+# RL Reel Studio — Vercel Fixed Next.js Build
 
-This version is intentionally built as a static front-end so Vercel deployment will not fail from missing Next.js build settings, package conflicts, server functions, or environment variables.
+This package is a clean Next.js deployment-ready build for RL Reel Studio.
 
-## Deploy on Vercel
-1. Upload this folder or push it to GitHub.
-2. In Vercel, import the repo.
-3. Framework Preset: Other / Static.
-4. Build Command: leave empty.
-5. Output Directory: leave empty or use `./`.
-6. Deploy.
+## Deploy
+1. Upload this ZIP to a new GitHub repo or drag the folder into Vercel.
+2. Vercel Framework Preset: Next.js.
+3. Build Command: `npm run build`.
+4. Output Directory: leave blank.
 
-Includes:
-- Premium homepage
-- How it works
-- RL style selection
-- Upload/demo project flow
-- AI processing simulation
-- Studio dashboard
-- Project table
-- Mobile responsive design
+This version includes all missing page imports/components so the `module-not-found` deployment error is fixed.
