@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RL Reel Studio | AI Video Editing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><div class="brand-mark">RL</div><div><strong>RL REEL STUDIO</strong><span>AI editing by RL Footage</span></div></a>
+    <nav><a href="#how">How it works</a><a href="#styles">Styles</a><a href="#dashboard">Dashboard</a><a class="nav-pill" href="#upload">Start Project</a></nav>
+  </header>
+
+  <main id="app">
+    <section id="home" class="hero page active">
+      <div class="hero-copy">
+        <div class="eyebrow">AI Powered Online Video Editing Platform</div>
+        <h1>Upload raw footage. Receive premium RL-style reels automatically.</h1>
+        <p>Built for restaurants, realtors, med spas, mortgage companies, gyms, auto dealers, dentists, jewelry stores, events, and small businesses that need professional content without learning editing software.</p>
+        <div class="hero-actions"><a class="btn primary" href="#upload">Create AI Project</a><a class="btn ghost" href="#dashboard">View Dashboard</a></div>
+        <div class="stats"><div><b>5</b><span>AI versions</span></div><div><b>4K</b><span>Export ready</span></div><div><b>24/7</b><span>Client portal</span></div></div>
+      </div>
+      <div class="studio-card">
+        <div class="video-preview"><div class="play">▶</div><span>AI Preview Rendering</span></div>
+        <div class="timeline"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="ai-list"><p><b>AI detected:</b> best clips, smiles, food/product shots, camera movement, hooks, captions, beat cuts.</p></div>
+      </div>
+    </section>
+
+    <section id="how" class="page panel-section">
+      <h2>Simple upload-to-export workflow</h2>
+      <div class="grid cards">
+        <article><span>01</span><h3>Upload Footage</h3><p>Drag phone clips, drone shots, camera footage, or client videos into the project.</p></article>
+        <article><span>02</span><h3>Select Business</h3><p>Restaurant, realtor, med spa, gym, auto dealer, mortgage company, and more.</p></article>
+        <article><span>03</span><h3>Choose RL Style</h3><p>Luxury, Commercial, High Energy, Product Showcase, Storytelling, or Cinematic.</p></article>
+        <article><span>04</span><h3>Export Content</h3><p>Instagram Reel, TikTok, YouTube Short, Story, Facebook Ad, or cinematic promo.</p></article>
+      </div>
+    </section>
+
+    <section id="styles" class="page panel-section">
+      <h2>RL editing styles</h2>
+      <div class="style-grid" id="styleGrid"></div>
+    </section>
+
+    <section id="upload" class="page workspace">
+      <div class="workspace-head"><div><h2>Create new AI video project</h2><p>Demo-ready project flow for deployment testing.</p></div><button class="btn primary" id="processBtn">Run AI Edit</button></div>
+      <div class="builder">
+        <div class="dropzone" id="dropzone"><input type="file" id="fileInput" multiple accept="video/*,image/*"><strong>Drop footage here</strong><span>or click to choose files</span><small id="fileCount">No files selected yet</small></div>
+        <div class="form-card"><label>Business Type<select id="businessType"><option>Restaurant</option><option>Realtor</option><option>Mortgage Company</option><option>Med Spa</option><option>Dentist</option><option>Auto Dealer</option><option>Jewelry Store</option><option>Gym</option><option>Small Business</option></select></label><label>RL Style<select id="rlStyle"><option>RL Luxury</option><option>RL Commercial</option><option>RL High Energy</option><option>RL Product Showcase</option><option>RL Storytelling</option><option>RL Cinematic</option></select></label><label>Output<select id="outputType"><option>Instagram Reel</option><option>TikTok</option><option>YouTube Short</option><option>Story Format</option><option>Facebook Ad</option><option>Cinematic Commercial</option></select></label></div>
+      </div>
+      <div class="processing" id="processing"><div class="ring"></div><div><h3>AI editing engine</h3><p id="processText">Waiting for project...</p></div></div>
+    </section>
+
+    <section id="dashboard" class="page dashboard">
+      <div class="workspace-head"><div><h2>Studio Dashboard</h2><p>Projects, AI status, exports, client review, and admin controls.</p></div><a class="btn primary" href="#upload">New Project</a></div>
+      <div class="dash-grid"><div class="metric"><b>18</b><span>Total Projects</span></div><div class="metric"><b>7</b><span>Rendering</span></div><div class="metric"><b>42</b><span>Exports</span></div><div class="metric"><b>$1.9k</b><span>Monthly Plan Demo</span></div></div>
+      <div class="project-table"><div class="row head"><span>Project</span><span>Business</span><span>Style</span><span>Status</span></div><div class="row"><span>Beverly Hills Dinner Reel</span><span>Restaurant</span><span>RL Luxury</span><span class="badge done">Ready</span></div><div class="row"><span>Luxury Home Tour</span><span>Realtor</span><span>RL Cinematic</span><span class="badge progress">Rendering</span></div><div class="row"><span>Med Spa Promo</span><span>Med Spa</span><span>Product Showcase</span><span class="badge review">Review</span></div></div>
+    </section>
+  </main>
+
+  <footer>RL Footage © 2026 · AI video editing SaaS MVP · Vercel-ready static deployment</footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,33 +1,21 @@
-# RL Reel Studio
+# RL Reel Studio - Vercel Ready Static MVP
 
-AI-powered SaaS platform MVP for RL Footage style video editing.
+This version is intentionally built as a static front-end so Vercel deployment will not fail from missing Next.js build settings, package conflicts, server functions, or environment variables.
 
-## Included
-- Homepage
-- Login / Signup screen
-- Dashboard
-- Project Manager
-- Upload screen
-- Industry selector
-- RL style selector
-- Output selector
-- Processing preview screen
-- Project history
-- Responsive premium RL brand UI
+## Deploy on Vercel
+1. Upload this folder or push it to GitHub.
+2. In Vercel, import the repo.
+3. Framework Preset: Other / Static.
+4. Build Command: leave empty.
+5. Output Directory: leave empty or use `./`.
+6. Deploy.
 
-## Run Locally
-```bash
-npm install
-npm run dev
-```
-
-## Deploy
-Upload this project to GitHub and import into Vercel.
-
-## Future Backend Connections
-- Supabase Auth for login
-- Supabase database for projects
-- Cloudflare R2 / Supabase Storage for video uploads
-- FFmpeg processing pipeline
-- AI clip selection and caption generation
-- Stripe billing
+Includes:
+- Premium homepage
+- How it works
+- RL style selection
+- Upload/demo project flow
+- AI processing simulation
+- Studio dashboard
+- Project table
+- Mobile responsive design
